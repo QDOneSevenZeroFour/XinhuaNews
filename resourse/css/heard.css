@@ -1,0 +1,49 @@
+*{margin: 0;padding: 0;}
+header{
+	height: 50px;
+	width: 100%;
+	background: red;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	z-index: 9;
+	
+}
+.fade-enter-active,
+.fade-leave-active {
+	left:0px;
+	transition: all 2s;
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active in below version 2.1.8 */
+
+{
+	/*opacity: 0;*/
+	/*transform: scale(0);*/
+	right:-200px;
+}
+
+.fade-enter-to,
+.fade-leave
+/* .fade-leave-active in below version 2.1.8 */
+
+{
+	/*opacity: 1;*/
+	left:-200px;
+	/*transform: scale(1);*/
+}
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+  transition: all 1s;
+}
+.list-enter, .list-leave-to
+/* .list-leave-active for below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
